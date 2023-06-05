@@ -1,0 +1,22 @@
+@(individualPokemonData: Seq[IndividualPokemon])
+
+@main("Pokedex") {
+    <div class="pokemon-box">
+     @for(pokemon <- individualPokemonData) {
+         <div class="pokemon">
+             <img class="pokemon-image" src="@pokemon.sprites.front_shiny" alt="@pokemon.name">
+             <p>
+             #@pokemon.id
+            </p>
+
+             <div>
+                 <button>@pokemon.name.capitalize</button>
+             </div>
+
+             @for(pokemonType <- pokemon.types) {
+                 <span class="@{pokemonType.`type`.name}"> @{pokemonType.`type`.name.capitalize} </span>
+             }
+         </div>
+     }
+  </div>
+}

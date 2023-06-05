@@ -1,0 +1,40 @@
+.pokemon-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+
+.pokemon {
+    background-color:rgba(0,0,0, 0.6);
+    color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 1) 0px 5px 15px;
+    padding: 3rem;
+    cursor: pointer;
+    min-width: 250px;
+    margin: 2rem;
+}
+
+.pokemon-box :hover {
+    transform: scale(1.1);
+}
+
+.grass {
+    padding: 0.25rem;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    margin: 0.25rem;
+}
+
+.poison {
+    padding: 0.25rem;
+    background-color: purple;
+    border-radius: 5px;
+    color: white;
+    margin: 0.25rem;
+}
+
+.pokemon-image {
+    margin: auto;
+}
